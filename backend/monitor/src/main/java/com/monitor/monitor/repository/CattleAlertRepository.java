@@ -13,6 +13,7 @@ public class CattleAlertRepository {
     public CattleAlertRepository() {
         alerts.add(new CattleAlert(1L, 10, 3)); // 30%
         alerts.add(new CattleAlert(2L, 10, 8)); // 80%
+        alerts.add(new CattleAlert(3L, 12, 5));
     }
 
     public List<CattleAlert> findAll() {

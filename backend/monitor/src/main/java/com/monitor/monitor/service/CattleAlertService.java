@@ -6,9 +6,9 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 @Service
 public class CattleAlertService {
+    @Autowired
     private final CattleAlertRepository repository;
 
-    @Autowired
     public CattleAlertService(CattleAlertRepository repository) {
         this.repository = repository;
     }

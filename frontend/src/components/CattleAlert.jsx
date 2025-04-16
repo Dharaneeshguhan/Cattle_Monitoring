@@ -13,7 +13,7 @@ function CattleAlert({ id, sensingHours, restingHours }) {
 
   return (
     <div className={alertClass}>
-      {restingRatio > 74 && <div className="alert-icon">!</div>}
+      {restingRatio > 74 && <div className="alert-icon"> ! </div>}
 
       <h3 className="id-heading">Cattle ID: {id}</h3>
 
@@ -29,6 +29,10 @@ function CattleAlert({ id, sensingHours, restingHours }) {
       </div>
     </div>
   );
+
+
+
+  
 }
 
 export default CattleAlert;
