@@ -6,18 +6,19 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 @Service
 public class CattleAlertService {
-    @Autowired
-    private final CattleAlertRepository repository;
 
-    public CattleAlertService(CattleAlertRepository repository) {
-        this.repository = repository;
-    }
+    @Autowired
+    private CattleAlertRepository repository;
 
     public List<CattleAlert> getAllAlerts() {
         return repository.findAll();
     }
 
+    public CattleAlert saveAlert(CattleAlert alert) {
+        return repository.save(alert);
+    }
+
     public void clearAlerts() {
-        repository.resetProgress();
+        repository.deleteAll();
     }
 }

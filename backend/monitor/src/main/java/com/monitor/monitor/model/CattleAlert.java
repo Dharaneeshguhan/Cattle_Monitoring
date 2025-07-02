@@ -1,7 +1,14 @@
 package com.monitor.monitor.model;
 
+import jakarta.persistence.*;
+
+@Entity
 public class CattleAlert {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private double sensingHours;
     private double restingHours;
 

@@ -217,3 +217,32 @@
     box-shadow: 0 0 0 0 rgba(247, 37, 133, 0);
   }
 }
+/*warning*/
+.warning-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  background-color: #ff8f07; /* Amber color for warning */
+  color: #333;
+  font-weight: bold;
+  font-size: 0.9em;
+  margin-left: 0.5em;
+  animation: pulse 1s infinite;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional pulse animation for extra attention */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
